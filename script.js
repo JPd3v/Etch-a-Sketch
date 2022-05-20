@@ -27,16 +27,17 @@ function getNumber() {
     })
 }
 
-changecolor()
 function changecolor() {
+    let color = document.querySelector(".btn-color")
     let squares = document.querySelectorAll('.grid-square');
     squares.forEach(square => {
         square.addEventListener("mouseover", (e) => {
-        //  e.target.classList.add("color")
-            e.target.style.backgroundColor ="blue"
+            e.target.style.backgroundColor = color.value
         })
     })
 }
+
+
 
 function getSquaresWidth(number) {
     let containerWidth = document.querySelector('.container').offsetWidth
