@@ -1,4 +1,7 @@
+createGrid(16)
+
 function createGrid(number) {
+    deleteGrid()
     let container = document.querySelector('.container');
 
     for (let i = 0; i < Math.pow(number, 2); i++) {
@@ -23,15 +26,6 @@ function getNumber() {
         
     })
 }
-// createOriginalGrid()
-function createOriginalGrid() {
-    let container = document.querySelector('.container');
-    for (let i = 0; i < 256; i++) {
-        let square = document.createElement('div');
-        square.classList.add('grid-square');
-        container.appendChild(square);
-    }
-}
 
 changecolor()
 function changecolor() {
@@ -55,4 +49,11 @@ function modifySquaresWidth(number) {
     squares.forEach(square => {
         square.style.minWidth = `${getSquaresWidth(number)}px`
     })
+}
+
+function deleteGrid(){
+    let container = document.querySelector('.container');
+    while (container.lastChild) {
+        container.removeChild(container.lastChild)
+    }
 }
