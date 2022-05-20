@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container {
+    margin-top:50px;
+    height:480px;
+    width:480px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.grid-square{
+    border:1px black solid;
+    flex: 1 1 auto;
+    min-width: 30px;
+    min-height: 30px;;
+}
+
+.color{
+    background-color:red;
+}
