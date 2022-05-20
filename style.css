@@ -8,12 +8,13 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
     margin-top:50px;
-    height:480px;
-    width:480px;
+    height:520px;
+    width:520px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,9 +23,9 @@ body {
 
 .grid-square{
     border:1px black solid;
-    flex: 1 1 auto;
-    min-width: 30px;
-    min-height: 30px;;
+    /* flex: 1 1 auto; */
+    /* min-width: 30px; */
+    /* min-height: 30px;; */
 }
 
 .color{
