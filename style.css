@@ -11,8 +11,34 @@ body {
     flex-direction: column;
 }
 
+.title{
+    font-size:60px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+button{
+    font-size: 18px;
+    background: #6674ef;
+    color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+input,
+button{
+    cursor: pointer;
+}
+
 .container {
-    margin-top:50px;
+    margin-top:30px;
     height:520px;
     width:520px;
     display:flex;
